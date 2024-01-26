@@ -1,0 +1,33 @@
+.food-menu {
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    &::-webkit-scrollbar {
+      height: 4px;
+      background-color: #e4e1e1;
+      border-radius: 6px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #cfa670;
+      border-radius: 6px;
+    }
+    &__link {
+      text-align: center;
+      margin-right: 22px;
+      font-size: 14px;
+      color: #151515;
+      font-weight: 500;
+      line-height: 110%;
+      transition: color 0.2s ease;
+  
+      &:hover {
+        color: #cfa670;
+      }
+    }
+  }
+  
