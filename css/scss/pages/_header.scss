@@ -2,166 +2,193 @@
 // font-family: 'Roboto Slab', serif;
 
 .header-top {
-    background-color: #000;
-    padding: 15px 0;
-  
-    &__container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    &__soc-item {
-      padding: 0 3px;
-      a {
-        img {
-          width: 20px;
-        }
+  background-color: #000;
+  padding: 15px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__soc-item {
+    padding: 0 3px;
+    a {
+      img {
+        width: 20px;
       }
     }
-  
-    &__soc-list {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  }
+
+  &__soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    a {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 500;
+      border-bottom: 2px solid #fff;
+      transition: color 0.2s ease, border-color 0.3s ease;
     }
-  
+
+    :hover {
+      color: #cfa670;
+      border-color: #cfa670;
+    }
+  }
+}
+
+.header-sticky {
+  background-color: #fff;
+  position: sticky;
+  top: -1px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+
+  .logo {
+    margin-left: 20px;
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #cfa670;
+    }
+
+    span {
+      padding: 15px 0;
+    }
+  }
+
+  &__basket {
+    position: relative;
+  }
+
+  &__basket-img {
+    img {
+      width: 30px;
+    }
+  }
+
+  &__basket-quantuty {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    min-width: 20px;
+    top: -6px;
+    right: -8px;
+    padding: 3px;
+    background-color: #cfa670;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  &__item-submenu {
+    position: relative;
+  }
+
+  &__item-img {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: -14px;
+    width: 15px;
+  }
+
+  &__icon {
+    all: initial;
+    cursor: pointer;
+  }
+}
+
+.menu__item:hover .submenu,
+.menu__item:hover .menu__item-img {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  max-width: 200px;
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  li:not(:last-child) {
+    border-bottom: 1px solid #3c3a3a; /* Пример стиля бордера */
+  }
+
+  a {
+    padding: 15px;
+    white-space: nowrap;
+    display: block;
+    color: #c3c2c2;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header-top {
     &__text {
       a {
-          color: #fff;
-        font-size: 17px;
-        font-weight: 500;
-        border-bottom: 2px solid #fff;
-        transition: color 0.2s ease, border-color 0.3s ease;
-      }
-  
-      :hover {
-        color: #cfa670;
-        border-color: #cfa670;
+        font-size: 12px;
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
       }
     }
   }
-  
-  
-  .header-sticky{
-      background-color: #fff;
-      position: sticky;
-      top: -1px;
-  }
-  
-  .header-bottom{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-  
-      .logo{
-          margin-left: 20px;
-          img{
-              width: 50px;
-          }
+
+  .header-bottom {
+    justify-content: space-between;
+
+    .logo {
+      margin-left: 0px;
+
+      img {
+        width: 35px;
       }
+    }
   }
-  
+
   .menu{
-      display: flex;
-      align-items: center;
-      gap: 30px;
-  
-      &__list{
-          display: flex;
-          gap: 20px;
-      }
-  
-      &__item{
-          position: relative;
-      }
-  
-      &__link{
-          font-size: 16px;
-          font-weight: 500;
-          transition: color 0.2s ease;
-  
-          &:hover{
-              color: #cfa670;
-          }
-  
-          span{
-              padding: 15px 0;
-          }
-      }
-  
-      &__basket{
-          position: relative;
-      }
-  
-      &__basket-img{
-          img{
-              width: 30px;
-          }
-      }
-  
-      &__basket-quantuty{
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          min-width: 20px;
-          top: -6px;
-          right: -8px;
-          padding: 3px;
-          background-color: #cfa670;
-          border-radius: 50%;
-          color: #fff;
-          font-size: 12px;
-      }
-  
-      &__item-submenu{
-          position: relative;
-      }
-  
-      &__item-img{
-          display: none;
-        position: absolute;
-        top: 2px;
-        right: -14px;
-        width: 15px;
-      }
-  
-      &__icon{
-          all: initial;
-          cursor: pointer;
-      }
-  }
-  
-    
-    .menu__item:hover .submenu,
-    .menu__item:hover .menu__item-img{
-      display: block;
-    }
-    
-    .submenu {
+    &__list{
       display: none;
-      position: absolute;
-      top: 30px;
-      left: -20px;
-      max-width: 200px;
-      background-color: #000;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
-      li:not(:last-child) {
-          border-bottom: 1px solid #3c3a3a; /* Пример стиля бордера */
-      
-        }
-  
-      a {
-          padding: 15px;
-          white-space: nowrap;
-          display: block;
-          color: #c3c2c2;
-          margin-bottom: 5px;
-  
-          &:hover{
-              color: #fff;
-          }
-        }
     }
+  }
+}
