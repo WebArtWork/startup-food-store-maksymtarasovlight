@@ -6,17 +6,26 @@
           <ul class="header-top__soc-list">
             <li class="header-top__soc-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/facebook.svg" alt="facebook" />
+                <img
+                  src="/maksymtarasovlight/img/icons/facebook.svg"
+                  alt="facebook"
+                />
               </a>
             </li>
             <li class="header-top__soc-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/instagram.svg" alt="instagram" />
+                <img
+                  src="/maksymtarasovlight/img/icons/instagram.svg"
+                  alt="instagram"
+                />
               </a>
             </li>
             <li class="header-top__soc-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/youtube.svg" alt="youtube" />
+                <img
+                  src="/maksymtarasovlight/img/icons/youtube.svg"
+                  alt="youtube"
+                />
               </a>
             </li>
           </ul>
@@ -98,30 +107,31 @@
     </div>
     <div class="container">
       <section class="food">
+        {% for tag in tags %}
+
         <div class="food__title">
-          <a href="#">Страви XXL</a>
+          <a href="#">{{{tag.name}}}</a>
         </div>
         <div class="food__list">
+          {% for product in tag.products %}
           <div class="food-item">
             <div class="food-item__photo">
               <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+                <img src="{{{product.thumb}}}" alt="" />
               </a>
               <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
             </div>
             <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
+              <a href="#">{{{product.name}}}</a>
             </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__weight">{{{product.weight}}}</div>
+            <div class="food-item__price"><span>{{{product.price}}}</span>₴</div>
             <div class="food-item__descr">
-              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
-              огірком, синьою цибулею, беконом та міксом салату. Подається з
-              картопляними діпами та кетчупом.
-              <em>*У вартість входить упакування</em>
+              {{{product.descr}}}
+              <em>{{{product.packaging}}}</em>
             </div>
           </div>
-          <div class="food-item">
+          <!-- <div class="food-item">
             <div class="food-item__photo">
               <a href="#" class="food-item__photo-img">
                 <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
@@ -194,8 +204,10 @@
               картоплею та огірочками з бочки.
               <em>*У вартість входить упакування</em>
             </div>
-          </div>
+          </div> -->
+          {% endfor %}
         </div>
+        {% endfor %}
       </section>
     </div>
   </main>
@@ -208,17 +220,26 @@
           <ul class="footer-top__info-list">
             <li class="footer-top__info-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/facebook.svg" alt="facebook" />
+                <img
+                  src="/maksymtarasovlight/img/icons/facebook.svg"
+                  alt="facebook"
+                />
               </a>
             </li>
             <li class="footer-top__info-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/instagram.svg" alt="instagram" />
+                <img
+                  src="/maksymtarasovlight/img/icons/instagram.svg"
+                  alt="instagram"
+                />
               </a>
             </li>
             <li class="footer-top__info-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/youtube.svg" alt="youtube" />
+                <img
+                  src="/maksymtarasovlight/img/icons/youtube.svg"
+                  alt="youtube"
+                />
               </a>
             </li>
           </ul>

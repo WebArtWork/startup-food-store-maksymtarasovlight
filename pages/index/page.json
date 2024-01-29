@@ -3,6 +3,66 @@
 	"store": {
 		"telegram": "https://t.me/wawceo"
 	},
+
+	"tags": [
+		{
+			"name": "Страви XXL",
+			"products": [
+				{
+					"id": "/product1",
+					"price": 719.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "FISH&CHIPS",
+					"weight": "750грам",
+					"descr": "Філе тріски смажине в клярі тампура. Картопляні човники, три види соусу. Рекомендовано на двох.",
+					"packaging": ""
+				},
+				{
+					"id": "/product2",
+					"price": 546.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "ЦЕБЕРКО ФАЙНИХ КРИЛ",
+					"weight": "1200грам",
+					"descr": "Рекомендовано на двох",
+					"packaging": ""
+				}
+			]
+		},
+		{
+			"name": "Бургери “KUMPELGER”",
+			"products": [
+				{
+					"id": "/product3",
+					"price": 362.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "Бургери “KUMPELGER”",
+					"weight": "530грам",
+					"descr": "З яловичою котлетою, трюфельною пастою, сиром Чеддер, маринованим огірком, синьою цибулею та печерицями фрі. Подається з картопляними діпами та соусом",
+					"packaging": ""
+				},
+				{
+					"id": "/product4",
+					"price": 362.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "З КАМАМБЕРОМ ТА МАНГОВО-ГІРЧИЧНИМ",
+					"weight": "540грам",
+					"descr": "З яловичою котлетою, гермеліном, томатами чері, маринованим огірком та цибулевим мармеладом. Подається з картопляними діпами та соусом тартар.",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product5",
+					"price": 362.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "З БЕКОНОМ ТА СОУСОМ...",
+					"weight": "560грам",
+					"descr": "З яловичою котлетою, сиром Чеддер, томатами чері, маринованим огірком, синьою цибулею, беконом та міксом салату. Подається з картопляними діпами та кетчупом.",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		}
+	],
+
+
 	"top_products": [
 		{
 			"id": "/product",
