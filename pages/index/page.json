@@ -59,6 +59,472 @@
 					"packaging": "*У вартість входить упакування"
 				}
 			]
+		},
+		{
+			"name": "Вареники",
+			"products": [
+				{
+					"id": "/product6",
+					"price": 224.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "ЧОРНІ ВАРЕНИКИ З ОКУНЕМ",
+					"weight": "260грам",
+					"descr": "Подаються з вершково-імбирним соусом",
+					"packaging": ""
+				},
+				{
+					"id": "/product7",
+					"price": 278.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "МИСКА БАРАНЯЧИХ ВАРЕНИКІВ",
+					"weight": "350грам",
+					"descr": "Подаються в маслі зі смаженою хрусткою цибулькою і сметаною. 300/50г",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product8",
+					"price": 201.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "СМАЖЕНІ ПИРОГИ З БІЛИМИ...",
+					"weight": "270грам",
+					"descr": "Вареники з білими сушеними грибами та картоплею. Подаються зі шкварками 220/50г",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Головні страви",
+			"products": [
+				{
+					"id": "/product9",
+					"price": 370.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "СТЕЙК З ТЕЛЯЧОЇ ПЕЧІНКИ...",
+					"weight": "350грам",
+					"descr": "Теляча печінка обсмажена у вершковому маслі. Подається з баношем з пармезановою піною.",
+					"packaging": ""
+				},
+				{
+					"id": "/product10",
+					"price": 343.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "МЕДАЛЬКИ В ШПОНДЕРКУ",
+					"weight": "420грам",
+					"descr": "Свинні медальйони запечені у беконі. Подаються з вершковим соусом та картоплею з кропом 'по-молодому'",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product11",
+					"price": 435.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "“ПАЦЯ ТА ТЮТЯ”",
+					"weight": "500грам",
+					"descr": "Томлене у вершково-грибному соусі м'ясо. Подається з смаженою картоплею та огірочками з бочки.",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product12",
+					"price": 328.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "МОЦНІ КУРЯЧІ КРИЛЬЦЯ",
+					"weight": "350грам",
+					"descr": "В кисло-солодкому соусі з мигдалевими пластівцями",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product13",
+					"price": 298.00,
+					"thumb": "/maksymtarasovlight/img/food/food-5.jpg",
+					"name": "ІНДИК З РОНДЕЛЯ",
+					"weight": "295грам",
+					"descr": "Подається з печеними овочами та гострим соусом 170/75/50г",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+
+		{
+			"name": "Ковбаски",
+			"products": [
+				{
+					"id": "/product14",
+					"price": 1034.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "МЕТРОВА КОВБАСА",
+					"weight": "970грам",
+					"descr": "Подається з двома видами соусів та маринадами 800/170г",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product15",
+					"price": "121.00₴ – 1,208.00",
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "КОВБАСКА ІНДИЧА",
+					"weight": "100-1000грам",
+					"descr": "Ніжна ковбаса з м'яса індика з ароматом копченостей",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product16",
+					"price": "121.00₴ – 1,208.00",
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "КОВБАСКА ПАПРИКОВА",
+					"weight": "100-1000грам",
+					"descr": "Ковбаска з телятини, свинини та птиці",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product17",
+					"price": "121.00₴ – 1,208.00",
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "БАЙДЕРКА",
+					"weight": "100-1000грам",
+					"descr": "Класична галицька ковбаска до пива зі свинини",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Салати",
+			"products": [
+				{
+					"id": "/product18",
+					"price": 213.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "САЛАТ “ШУБА”",
+					"weight": "300грам",
+					"descr": "Картопля, морква, буряк, яблуко та звичайно осиледець",
+					"packaging": ""
+				},
+				{
+					"id": "/product19",
+					"price": 192.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "САЛАТКА “КУМПЕЛЬЄ”",
+					"weight": "250грам",
+					"descr": "Телячий язик, огірок маринований, картопля запечена, морква, цибулька, яйце куряче, зелений горошок. Заправлений соусом Олів'є.",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product20",
+					"price": 224.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "САЛАТ «ФАЙНИЙ НА ЗИМУ»",
+					"weight": "250грам",
+					"descr": "Зимовий салат з маринованим буряком, баклажанами, карамелізованою грушею та Камамбером. Подається з імбирно-медовою заправкою, кунжутом та мигдальними пластівцями. 250г",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product21",
+					"price": 259.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "ЗЕЛЕНА САЛАТКА З ГРІНКАМИ",
+					"weight": "200грам",
+					"descr": "Салатка з печеною куркою, смаженим копченим беконом та витриманим сиром",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Перші страви",
+			"products": [
+				{
+					"id": "/product22",
+					"price": 228.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "ЧЕРВОНИЙ КОПЧЕНИЙ БОРЩ",
+					"weight": "450грам",
+					"descr": "Традиційний український червоний борщ з квасолею на копчених ребрах. Приготований за стародовнім переписом з копченими переливами сливи та груші. Подається з відбірним салом, цибулею, сметаною та хлібом",
+					"packaging": ""
+				},
+				{
+					"id": "/product23",
+					"price": 251.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "СЕТ “СЛІЧНІ ЗУПКИ”",
+					"weight": "450грам",
+					"descr": "Дегустаційний сет традиційних галицьких зуп: чесна часникова, флячки, грибна юшка 150/150/150г",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product24",
+					"price": 216.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "ГУЛЯШОВА ЗУПА З ТЕЛЯТИНОЮ",
+					"weight": "400грам",
+					"descr": "Зупа з телятиною, паприкою, помідорами та галушками",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product25",
+					"price": 158.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "ЮШКА З БІЛИХ ГРИБІВ",
+					"weight": "300грам",
+					"descr": "Юшка з сушених білих грибів. Подається з литим тістом",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Закуски",
+			"products": [
+				{
+					"id": "/product26",
+					"price": 192.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "ФОРШМАК З ОСЕЛЕДЦЯ",
+					"weight": "210грам",
+					"descr": "Оселедець, яйце, цибулька, яблуко. Подається з мацою, маринованою цибулею та лимоном.",
+					"packaging": ""
+				},
+				{
+					"id": "/product27",
+					"price": 321.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "ГРИБИ БІЛІ МАРИНОВАНІ",
+					"weight": "200грам",
+					"descr": "Білі грибочки мариновані з цибулькою",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product28",
+					"price": "1,305.00",
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "ВИТРИБЕНЬКИ ДО ПИВА",
+					"weight": "1150грам",
+					"descr": "Курячі крильця в кисло-солодкому соусі з буряка, смородини та меду, цибулеві кільця та бараболі човники, хрусткі сирні палички, смажені свинні кумпельові вушка, курячі нагетси, три види соусів.",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product29",
+					"price": 868.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "КІЛО МОЦНИХ КРИЛ",
+					"weight": "1000грам",
+					"descr": "В кисло-солодкому соусі з мигдалевими пластівцями",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product30",
+					"price": 175.00,
+					"thumb": "/maksymtarasovlight/img/food/food-5.jpg",
+					"name": "ПАШТЕТКА З ВЕРШКОВИМ СИРОМ",
+					"weight": "170грам",
+					"descr": "З вершковим сиром та ароматним маслом. Подається з хрусткими грінками та цибулькою 120/50г",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Додатки",
+			"products": [
+				{
+					"id": "/product31",
+					"price": 209.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "“КУМПЕЛЬОВІ ВИТІВКИ”",
+					"weight": "500грам",
+					"descr": "Запашна картопля запечена з бринзою, розмарином та тимьяном. Огірочки з бочки, два види соусів: гірчичний, помідоровий",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product32",
+					"price": 86.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "ТОВЧЕНА КАРТОПЛЯ",
+					"weight": "200грам",
+					"descr": "Подається з вершковим маслом",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product33",
+					"price": 132.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "БАРАБОЛЯ ПЕЧЕНА В САЛІ",
+					"weight": "350грам",
+					"descr": "Подається з гострим соусом 300/50г",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product34",
+					"price": 228.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "ПЕЧЕНІ ОВОЧІ",
+					"weight": "300грам",
+					"descr": "",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Соуси",
+			"products": [
+				{
+					"id": "/product35",
+					"price": 90.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "СОУС РОЖЕВИЙ",
+					"weight": "150грам",
+					"descr": "",
+					"packaging": ""
+				},
+				{
+					"id": "/product36",
+					"price": 90.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "СОУС ГІРЧИЧНИЙ ГОСТРИЙ",
+					"weight": "150грам",
+					"descr": "",
+					"packaging": ""
+				},
+				{
+					"id": "/product37",
+					"price": 90.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "СОУС БУРЯЧКОВИЙ З ПОРІЧКАМИ",
+					"weight": "150грам",
+					"descr": "",
+					"packaging": ""
+				}
+			]
+		},
+		{
+			"name": "Десерти",
+			"products": [
+				{
+					"id": "/product38",
+					"price": 221.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "МЕДІВНИК",
+					"weight": "140грам",
+					"descr": "Медово-горіховий пляцок з сметанково-вершковим соусом",
+					"packaging": ""
+				},
+				{
+					"id": "/product39",
+					"price": 192.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "ТОРТ ЗАХЕР",
+					"weight": "145грам",
+					"descr": "Класичний віденський шоколадний торт, який готується у Львові з XΙX століття",
+					"packaging": ""
+				},
+				{
+					"id": "/product40",
+					"price": 190.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "БАБУСИН СИРНИК",
+					"weight": "145грам",
+					"descr": "Ніжний домашній сирник у шоколадній глазурі з журавлиним соусом 120/25г",
+					"packaging": "*У вартість входить упакування"
+				}
+			]
+		},
+		{
+			"name": "Розливне Митна",
+			"products": [
+				{
+					"id": "/product41",
+					"price": 125.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "СВІТЛЕ ГАЛИЦЬКЕ",
+					"weight": "1Л",
+					"descr": "Світле Галицьке - нефільтроване пиво, легке, питке, з приємним солодовим смаком, та низькою гірчинкою. Щільність: 12,0 % Міцність: 4,2 %  IBU: 21",
+					"packaging": "*У вартість входить упакування"
+				},
+				{
+					"id": "/product42",
+					"price": 125.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "БУРШТИНОВЕ + НАЧОС...",
+					"weight": "1Л",
+					"descr": "Бурштинове - пиво мідного кольору, у ароматі нотки тостів та хлібу, смак помірно солодкий Щільність: 12 %  Міцність: 4,0 % IBU: 21",
+					"packaging": ""
+				},
+				{
+					"id": "/product43",
+					"price": 125.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "БРОНЗОВИЙ ЕЛЬ",
+					"weight": "1Л",
+					"descr": " Темне, брунатного кольору, із насиченим карамельним ароматом доповненим тонами чорного заварного хліба, та заспиртованих фруктів та ягід. Щільність: 17 %  Міцність: 6.2%  IBU: 17",
+					"packaging": ""
+				},
+				{
+					"id": "/product44",
+					"price": 125.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "ЗОЛОТИЙ ЕЛЬ",
+					"weight": "1Л",
+					"descr": "Квітковий легкий аромат поєднується із солодовими нотками французького багету і надає відчуття повноти та свіжості; гірчинка помірна. Щільність: 16 %  Міцність: 6.5 % IBU: 24",
+					"packaging": ""
+				}
+			]
+		},
+		{
+			"name": "Розливне Чорновола",
+			"products": [
+				{
+					"id": "/product45",
+					"price": 125.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "СВІТЛЕ ГАЛИЦЬКЕ",
+					"weight": "1Л",
+					"descr": "Світле Галицьке - нефільтроване пиво, солом’яного кольору, із щільною високою піною, легке, питке, з приємним солодовим смаком, та низькою гірчинкою. Щільність: 12,0 % Міцність: 4,2 %  IBU: 21",
+					"packaging": ""
+				},
+				{
+					"id": "/product46",
+					"price": 125.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "ПШЕНИЧНЕ",
+					"weight": "1 ЛІТР",
+					"descr": "Ексклюзивно доставляється лише з вул. Чорновола. Нефільтроване пиво світло-золотистого кольору, щільне, з дуже високою піною, питке, освіжаюче,  з легким ароматом банану.",
+					"packaging": ""
+				}
+			]
+		},
+		{
+			"name": "Напої",
+			"products": [
+				{
+					"id": "/product47",
+					"price": 145.00,
+					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
+					"name": "СІК SANDORA",
+					"weight": "0,95 л",
+					"descr": "Апельсиновий",
+					"packaging": ""
+				},
+				{
+					"id": "/product48",
+					"price": 70.00,
+					"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+					"name": "PEPSI",
+					"weight": "250мл",
+					"descr": "",
+					"packaging": ""
+				},
+				{
+					"id": "/product49",
+					"price": 144.00,
+					"thumb": "/maksymtarasovlight/img/food/food-3.jpg",
+					"name": "УЗВАР",
+					"weight": "1000грам",
+					"descr": "в асортименті 1 л.",
+					"packaging": ""
+				},
+				{
+					"id": "/product50",
+					"price": 155.00,
+					"thumb": "/maksymtarasovlight/img/food/food-4.jpg",
+					"name": "ЛИМОНАД ДОМАШНІЙ",
+					"weight": "1000грам",
+					"descr": "в асортименті 1 л.",
+					"packaging": ""
+				}
+			]
 		}
 	],
 
