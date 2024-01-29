@@ -1,12 +1,44 @@
 body {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+.bg-foto {
+	margin: 30px 20px;
 	font-family: sans-serif;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-}
-
-html {
-	height: 100%;
 }

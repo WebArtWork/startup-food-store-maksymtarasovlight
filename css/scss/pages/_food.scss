@@ -1,0 +1,208 @@
+.food {
+  margin-bottom: 150px;
+  &__title {
+    position: relative;
+    text-align: center;
+    margin: 60px 0 60px 0;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+
+    a {
+      color: #cfa670;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #a78455;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(/maksymtarasovlight/img/food-item/var-shap.png)
+          no-repeat center center;
+        width: 100%;
+        height: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 60px;
+  }
+}
+
+.food-item {
+  display: inline-block;
+  text-align: center;
+  max-width: 245px;
+  // margin: 0 3.8% 2.992em 0;
+
+  &__photo {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__photo-img {
+    img {
+      width: 245px;
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+
+  &__photo-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(207, 166, 112, 0.9);
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #cfa670;
+    }
+  }
+
+  &__title {
+    color: #232323;
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 0;
+    min-height: 52px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    a {
+      transition: 0.2s ease;
+
+      &:hover {
+        color: #cfa670;
+      }
+    }
+  }
+
+  &__weight {
+    display: inline-block;
+    color: #232323;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 79px;
+      height: 7px;
+      background-size: cover;
+      margin-bottom: 1.5px;
+    }
+
+    &::before {
+      background: url(/maksymtarasovlight/img/food-item/left-shap.png) no-repeat
+        center center;
+      margin-right: 13px;
+    }
+
+    &::after {
+      background: url(/maksymtarasovlight/img/food-item/right-shap.png)
+        no-repeat center center;
+      margin-left: 13px;
+    }
+  }
+
+  &__price {
+    color: #555555;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 13px;
+    margin-top: 13px;
+    border-top: 2px dotted #b0b0b0;
+  }
+
+  &__descr {
+    position: relative;
+    margin-top: 30px;
+    min-height: 135px;
+    font-family: "Oswald", sans-serif;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url(/maksymtarasovlight/img/food-item/var-shap.png) no-repeat
+        center center;
+      background-size: cover;
+      width: 50%;
+      height: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 895px) {
+  .food {
+    &__list {
+      justify-content: center;
+      padding: 0 10px;
+    }
+
+    &__title {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .food {
+    &__list {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .food-item {
+    max-width: 420px;
+
+    &__photo-img {
+      img {
+        width: 420px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .food-item {
+    max-width: 320px;
+
+    &__photo-img {
+      img {
+        width: 320px;
+        height: 300px;
+      }
+    }
+  }
+}

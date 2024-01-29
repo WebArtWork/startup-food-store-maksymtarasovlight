@@ -1,12 +1,276 @@
-{% for product in top_products %}
-	<h1>{{{product.name}}}</h1>
-	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
-{% endfor %}
-{% for product in products %}
-	<h1>{{{product.name}}}</h1>
-	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
-{% endfor %}
-{% for article in articles %}
-	<h1>{{{article.name}}}</h1>
-	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-{% endfor %}
+<div class="wrapper">
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-top__container">
+        <div class="header-top__soc">
+          <ul class="header-top__soc-list">
+            <li class="header-top__soc-item">
+              <a href="#">
+                <img src="/maksymtarasovlight/img/icons/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="header-top__soc-item">
+              <a href="#">
+                <img src="/maksymtarasovlight/img/icons/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="header-top__soc-item">
+              <a href="#">
+                <img src="/maksymtarasovlight/img/icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top__text">
+          <a href="#">Умови доставки та самовивозу</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="header-sticky">
+    <div class="container">
+      <div class="header-bottom">
+        <a href="#" class="logo">
+          <img src="/maksymtarasovlight/img/logo.png" alt="logo" />
+        </a>
+
+        <nav class="header-bottom__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Головна</a>
+            </li>
+            <li class="menu__item menu__item-submenu">
+              <a href="#" class="menu__link"
+                ><span>Заклади</span>
+                <img
+                  class="menu__item-img"
+                  src="/maksymtarasovlight/img/icons/arrow-down.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Кумпель на Митній</a></li>
+                <li><a href="#">Кумпель за Оперним</a></li>
+                <li><a href="#">Кумпель на Ринку</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+          <a href="#" class="menu__basket">
+            <div class="menu__basket-img">
+              <img src="/maksymtarasovlight/img/icons/bag.svg" alt="bag" />
+            </div>
+            <div class="menu__basket-quantuty">0</div>
+          </a>
+
+          <button class="menu__icon icon-menu" type="button">
+            <img src="/maksymtarasovlight/img/icons/menu.svg" alt="menu" />
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container food-menu__container">
+    <section class="food-menu">
+      <a href="#" class="food-menu__link">Бургери "KUMPELGER"</a>
+      <a href="#" class="food-menu__link">Вареники</a>
+      <a href="#" class="food-menu__link">Головні страви</a>
+      <a href="#" class="food-menu__link">Ковбаски</a>
+      <a href="#" class="food-menu__link">Салати</a>
+      <a href="#" class="food-menu__link">Перші страви</a>
+      <a href="#" class="food-menu__link">Закуски</a>
+      <a href="#" class="food-menu__link">Додатки</a>
+      <a href="#" class="food-menu__link">Соуси</a>
+      <a href="#" class="food-menu__link">Десерти</a>
+      <a href="#" class="food-menu__link">Розливне Митна</a>
+      <a href="#" class="food-menu__link">Розливне Чорновола</a>
+      <a href="#" class="food-menu__link">Напої</a>
+    </section>
+  </div>
+
+  <main>
+    <div class="bg-foto">
+      <img src="/maksymtarasovlight/img/bg.jpg" alt="bg" />
+    </div>
+    <div class="container">
+      <section class="food">
+        <div class="food__title">
+          <a href="#">Страви XXL</a>
+        </div>
+        <div class="food__list">
+          <div class="food-item">
+            <div class="food-item__photo">
+              <a href="#" class="food-item__photo-img">
+                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+              </a>
+              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+            </div>
+            <div class="food-item__title">
+              <a href="#">FISH&CHIPS</a>
+            </div>
+            <div class="food-item__weight">100грам</div>
+            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__descr">
+              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
+              огірком, синьою цибулею, беконом та міксом салату. Подається з
+              картопляними діпами та кетчупом.
+              <em>*У вартість входить упакування</em>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item__photo">
+              <a href="#" class="food-item__photo-img">
+                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+              </a>
+              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+            </div>
+            <div class="food-item__title">
+              <a href="#">FISH&CHIPS</a>
+            </div>
+            <div class="food-item__weight">100грам</div>
+            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__descr">
+              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
+              огірком, синьою цибулею, беконом та міксом салату. Подається з
+              картопляними діпами та кетчупом.
+              <em>*У вартість входить упакування</em>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item__photo">
+              <a href="#" class="food-item__photo-img">
+                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+              </a>
+              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+            </div>
+            <div class="food-item__title">
+              <a href="#">FISH&CHIPS</a>
+            </div>
+            <div class="food-item__weight">100грам</div>
+            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__descr">
+              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
+              огірком, синьою цибулею, беконом та міксом салату. Подається з
+              картопляними діпами та кетчупом.
+              <em>*У вартість входить упакування</em>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item__photo">
+              <a href="#" class="food-item__photo-img">
+                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+              </a>
+              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+            </div>
+            <div class="food-item__title">
+              <a href="#">FISH&CHIPS</a>
+            </div>
+            <div class="food-item__weight">100грам</div>
+            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__descr">
+              Томлене у вершково-грибному соусі м'ясо. Подається з смаженою
+              картоплею та огірочками з бочки.
+              <em>*У вартість входить упакування</em>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item__photo">
+              <a href="#" class="food-item__photo-img">
+                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+              </a>
+              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+            </div>
+            <div class="food-item__title">
+              <a href="#">FISH&CHIPS</a>
+            </div>
+            <div class="food-item__weight">100грам</div>
+            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__descr">
+              Томлене у вершково-грибному соусі м'ясо. Подається з смаженою
+              картоплею та огірочками з бочки.
+              <em>*У вартість входить упакування</em>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-top__container">
+        <div class="footer-top__info">
+          <div class="footer-top__title">KUMPEL’ GROUP</div>
+          <ul class="footer-top__info-list">
+            <li class="footer-top__info-item">
+              <a href="#">
+                <img src="/maksymtarasovlight/img/icons/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="footer-top__info-item">
+              <a href="#">
+                <img src="/maksymtarasovlight/img/icons/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="footer-top__info-item">
+              <a href="#">
+                <img src="/maksymtarasovlight/img/icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+          </ul>
+          <div class="footer-top__info-img">
+            <img src="/maksymtarasovlight/img/pay-ico.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-top__menu">
+          <div class="footer-top__title">МЕНЮ САЙТУ</div>
+          <ul class="footer-top__menu-list">
+            <li class="footer-top__menu-item">
+              <a href="" class="footer-top__menu-link">Головна</a>
+            </li>
+            <li class="footer-top__menu-item">
+              <a href="" class="footer-top__menu-link">Заклади</a>
+            </li>
+            <li class="footer-top__menu-item-sub">
+              <ul class="footer-top__submenu-list">
+                <li class="footer-top__submenu-item">
+                  <a href="#">Кумпель на Митній</a>
+                </li>
+                <li class="footer-top__submenu-item">
+                  <a href="#">Кумпель за Оперним</a>
+                </li>
+                <li class="footer-top__submenu-item">
+                  <a href="#">Кумпель на Ринку</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer-top__menu-item">
+              <a href="" class="footer-top__menu-link">Новини</a>
+            </li>
+            <li class="footer-top__menu-item">
+              <a href="" class="footer-top__menu-link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__chain">
+          <div class="footer-top__title">МЕРЕЖА KUMPEL’ GROUP</div>
+          <a href="#" class="footer-top__chain-img">
+            <img src="/maksymtarasovlight/img/kumpelgroup.png" alt="" />
+          </a>
+          <div class="footer-top__chain-descr">Ресторани мережі:</div>
+          <a href="#" class="footer-top__chain-email">waw@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p>&copy; 2008 - 2024 - Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
