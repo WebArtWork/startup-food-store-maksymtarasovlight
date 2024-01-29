@@ -166,6 +166,7 @@
 
 @media (max-width: 576px) {
   .header-top {
+
     &__text {
       a {
         font-size: 12px;
@@ -177,6 +178,7 @@
 
   .header-bottom {
     justify-content: space-between;
+    padding: 5px 0;
 
     .logo {
       margin-left: 0px;
