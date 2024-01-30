@@ -99,7 +99,10 @@
   }
 
   &__weight {
-    display: inline-block;
+    // display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #232323;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
@@ -108,11 +111,12 @@
     &::before,
     &::after {
       content: "";
-      display: inline-block;
+      // display: inline-block;
       width: 79px;
       height: 7px;
       background-size: cover;
-      margin-bottom: 1.5px;
+      // margin-bottom: 1.5px;
+
     }
 
     &::before {

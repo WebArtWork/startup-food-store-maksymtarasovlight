@@ -1,3 +1,8 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
 <div class="wrapper">
   <header class="header">
     <div class="header-top">
@@ -74,14 +79,50 @@
             </div>
             <div class="menu__basket-quantuty">0</div>
           </a>
-
-          <button class="menu__icon icon-menu" type="button">
+          <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+          <!-- <button class="menu__icon icon-menu" type="button">
             <img src="/maksymtarasovlight/img/icons/menu.svg" alt="menu" />
-          </button>
+          </button> -->
         </nav>
       </div>
     </div>
   </header>
+  <nav class="burger-nav">
+    <div class="burger-nav__overlay" onclick="navToggle()"></div>
+    <ul class="burger-nav__ul" id="navUl">
+      <a href="#" class="burger-nav__img">
+        <img src="/maksymtarasovlight/img/logo.png" alt="" />
+      </a>
+      <li class="burger-nav__li">
+        <a href="#" class="burger-nav__a">Головна</a>
+      </li>
+
+      <li class="burger-nav__li accordeon">
+        <div class="accordeon__item">
+          <a href="#" class="burger-nav__a accordeon__button">Закладки</a>
+
+          <ul class="accordeon__list">
+            <li><a href="#">Кумпель на Митній</a></li>
+            <li><a href="#">Кумпель за Оперним</a></li>
+            <li><a href="#">Кумпель на Ринку</a></li>
+            <li class="li__last"><a href="#">Craft&Kumpel Beer Atelier</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="burger-nav__li">
+        <a href="#" class="burger-nav__a">Політика конфіденційності</a>
+      </li>
+      <li class="burger-nav__li">
+        <a href="#" class="burger-nav__a">Договір публічної оферти</a>
+      </li>
+      <li class="burger-nav__li burger-nav__li-last">
+        <a href="#" class="burger-nav__a">Контакти</a>
+      </li>
+      <span class="material-icons icon-close" onclick="navToggle()">close</span>
+    </ul>
+    
+  </nav>
 
   <div class="container food-menu__container">
     <section class="food-menu">
@@ -108,7 +149,6 @@
     <div class="container">
       <section class="food">
         {% for tag in tags %}
-
         <div class="food__title">
           <a href="#">{{{tag.name}}}</a>
         </div>
@@ -125,86 +165,14 @@
               <a href="#">{{{product.name}}}</a>
             </div>
             <div class="food-item__weight">{{{product.weight}}}</div>
-            <div class="food-item__price"><span>{{{product.price}}}</span>₴</div>
+            <div class="food-item__price">
+              <span>{{{product.price}}}</span>₴
+            </div>
             <div class="food-item__descr">
               {{{product.descr}}}
               <em>{{{product.packaging}}}</em>
             </div>
           </div>
-          <!-- <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
-              огірком, синьою цибулею, беконом та міксом салату. Подається з
-              картопляними діпами та кетчупом.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
-              огірком, синьою цибулею, беконом та міксом салату. Подається з
-              картопляними діпами та кетчупом.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              Томлене у вершково-грибному соусі м'ясо. Подається з смаженою
-              картоплею та огірочками з бочки.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              Томлене у вершково-грибному соусі м'ясо. Подається з смаженою
-              картоплею та огірочками з бочки.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div> -->
           {% endfor %}
         </div>
         {% endfor %}
@@ -295,3 +263,4 @@
     </div>
   </footer>
 </div>
+<script src="/maksymtarasovlight/js/burgerMenu.js"></script>
