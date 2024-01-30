@@ -8,8 +8,7 @@
 		{
 			"name": "Страви XXL",
 			"products": [
-				{
-					"id": "/product1",
+				{   "id": "/product1",
 					"price": 719.00,
 					"thumb": "/maksymtarasovlight/img/food/food-1.jpg",
 					"name": "FISH&CHIPS",
