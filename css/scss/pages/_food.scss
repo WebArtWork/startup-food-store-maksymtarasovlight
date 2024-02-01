@@ -9,11 +9,11 @@
     font-family: "Oswald", sans-serif;
 
     a {
-      color: #cfa670;
+      color: $ivory;
       transition: color 0.2s ease;
 
       &:hover {
-        color: #a78455;
+        color: $antelope_skin;
       }
 
       &::after {
@@ -73,12 +73,12 @@
     transition: background-color 0.2s ease;
 
     &:hover {
-      background-color: #cfa670;
+      background-color: $ivory;
     }
   }
 
   &__title {
-    color: #232323;
+    color: $anthracite;
     display: block;
     margin-top: 20px;
     text-transform: uppercase;
@@ -92,7 +92,7 @@
       transition: 0.2s ease;
 
       &:hover {
-        color: #cfa670;
+        color: $ivory;
       }
     }
   }
@@ -101,7 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #232323;
+    color: $anthracite;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     white-space: nowrap;
@@ -129,13 +129,13 @@
   }
 
   &__price {
-    color: #555555;
+    color: $dark_gray;
     font-family: "Oswald", sans-serif;
     font-size: 15px;
     font-weight: 500;
     padding-top: 13px;
     margin-top: 13px;
-    border-top: 2px dotted #b0b0b0;
+    border-top: 2px dotted $gray;
   }
 
   &__descr {

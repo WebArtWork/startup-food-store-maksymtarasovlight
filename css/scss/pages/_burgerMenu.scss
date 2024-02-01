@@ -21,10 +21,10 @@
     width: 350px;
     height: 100%;
     overflow-y: auto;
-    background-color: #111110;
+    background-color: $midnight_black;
     right: 0;
     top: 0;
-    color: #fff;
+    color: $white;
     transition: 0.4s ease;
     transform: translateX(120%);
     &._active {
@@ -32,7 +32,7 @@
     }
 
     .burger-nav__li {
-      border-bottom: 1px solid #3a3a3a;
+      border-bottom: 1px solid $charcoal_gray;
     }
 
     .burger-nav__li-last {
@@ -43,7 +43,7 @@
       padding: 9px 0;
       font-size: 16px;
       line-height: 29px;
-      color: #aaaaaa;
+      color: $medium_gray;
       transition: 0.2s ease;
 
       &:hover {
@@ -92,7 +92,7 @@
     margin-left: 30px;
 
     li {
-      border-bottom: 1px solid #3a3a3a;
+      border-bottom: 1px solid $charcoal_gray;
     }
 
     .li__last {
@@ -107,7 +107,7 @@
       transition: 0.2s ease;
 
       &:hover {
-        color: #aaaaaa;
+        color: $medium_gray;
       }
     }
   }
@@ -117,9 +117,6 @@
   opacity: 1;
 }
 
-.accordeon__dish--active {
-  color: green;
-}
 
 @media (max-width: 576px){
     .burger-nav__ul{

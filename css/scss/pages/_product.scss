@@ -18,7 +18,7 @@
     font-size: 35px;
     font-weight: 700;
     font-family: "Oswald", sans-serif;
-    color: #151515;
+    color: $deep_black;
     letter-spacing: 1px;
     margin-bottom: 23px;
     margin-top: 35px;
@@ -30,15 +30,15 @@
     font-size: 24px;
     font-weight: 700;
     font-family: "Oswald", sans-serif;
-    color: #cfa670;
+    color: $ivory;
     margin-bottom: 24px;
     padding-bottom: 19px;
-    border-bottom: 2px dotted #b0b0b0;
+    border-bottom: 2px dotted $gray;
   }
 
   &__descr {
     font-size: 16px;
-    color: #777777;
+    color: $steel_gray;
     margin-bottom: 10px;
   }
 
@@ -49,8 +49,8 @@
   }
 
   &__cart-quantity input {
-    border: 1px solid #e5e5e5;
-    color: #000000;
+    border: 1px solid $snow_white;
+    color: $absolute_black;
     font-size: 15px;
     height: 50px;
     max-width: 75px;
@@ -65,7 +65,7 @@
     font-weight: 500;
     border: none;
     cursor: pointer;
-    background-color: #552824;
+    background-color: $mahogany_brown;
     border-radius: 0;
     color: #ffffff;
     height: 50px;
@@ -77,20 +77,20 @@
   }
 
   &__cart-button:hover {
-    background-color: #cfa670;
+    background-color: $ivory;
   }
 
   &__category {
     font-size: 16px;
-    color: #232323;
+    color: $anthracite;
     margin-top: 8px;
 
     a {
-      color: #777777;
+      color: $steel_gray;
       transition: 0.2s ease;
 
       &:hover {
-        color: #cfa670;
+        color: $ivory;
       }
     }
   }

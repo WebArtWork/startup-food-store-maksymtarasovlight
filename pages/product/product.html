@@ -1,4 +1,3 @@
-
 <div class="wrapper">
   <header class="header">
     <div class="header-top">
@@ -75,11 +74,14 @@
             </div>
             <div class="menu__basket-quantuty">0</div>
           </a>
-          <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+          <span class="material-icons icon-menu" onclick="navToggle()"
+            >menu</span
+          >
         </nav>
       </div>
     </div>
   </header>
+
   <nav class="burger-nav">
     <div class="burger-nav__overlay" onclick="navToggle()"></div>
     <ul class="burger-nav__ul" id="navUl">
@@ -114,37 +116,32 @@
       </li>
       <span class="material-icons icon-close" onclick="navToggle()">close</span>
     </ul>
-    
   </nav>
-
-
 
   <main>
     <div class="container product__container">
       <section class="product">
         <div class="product__img">
-            <img src="/maksymtarasovlight/img/food/food-2.jpg" alt="">
+          <img src="{{{product.thumb}}}" alt="" />
         </div>
         <div class="product-info">
-            <div class="product-info__title">ЦЕБЕРКО ФАЙНИХ КРИЛ</div>
-            <div class="product-info__price">546.00₴</div>
-            <div class="product-info__descr">Рекомендовано на двох</div>
-            <form class="product-info__cart">
-                <div class="product-info__cart-quantity">
-                    <input type="number" value="2">
-                </div>
-                <button class="product-info__cart-button">Додати у кошик</button>
-            </form>
-            <div class="product-info__category">
-                Категорія:&nbsp; <a href="#">Страви XXL</a>
+          <div class="product-info__title">{{{product.name}}}</div>
+
+          <div class="product-info__price">{{{product.price}}}<span>₴</span></div>
+          <div class="product-info__descr">{{{product.descr}}}</div>
+          <form class="product-info__cart">
+            <div class="product-info__cart-quantity">
+              <input type="number" value="2" />
             </div>
+            <button class="product-info__cart-button">Додати у кошик</button>
+          </form>
+          <div class="product-info__category">
+            Категорія:&nbsp; <a href="#">{{{product.category}}}</a>
+          </div>
         </div>
-      
       </section>
     </div>
   </main>
-
-
 
   <footer class="footer">
     <div class="footer-top">

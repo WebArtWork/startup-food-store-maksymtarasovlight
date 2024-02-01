@@ -15,7 +15,27 @@
 		"primary_text_color": "#000000",
 		"secondary_text_color": "#FFFFFF",
 		"primary_radius": "0",
-		"secondar_radius": "0"
+		"secondar_radius": "0",
+
+		"white": "#ffffff",
+        "snow_white": "#e5e5e5",
+        "light_salmon": "#e4e1e1",
+        "silver": "#c3c2c2",
+        "ivory": "#cfa670",
+        "gray": "#b0b0b0",
+        "medium_gray": "#aaaaaa",
+        "antelope_skin": "#a78455",
+        "steel_gray": "#777777",
+        "dark_gray": "#555555",
+        "charcoal_gray": "#3a3a3a",
+        "graphite": "#2c2c2c",
+        "anthracite": "#232323",
+        "deep_black": "#151515",
+        "absolute_black": "#000000",
+        "mahogany_brown": "#552824",
+		"midnight_black":"#111110",
+		"shadow_black":"#101010"
+		
 	},
 	"store": {
 		"name": "Store Name",

@@ -1,12 +1,11 @@
-{
-	"name": "product",
-	"products": {
+{   
+	"product": {
 		"id": "/product",
-		"price": 1200,
-		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/maksymtarasovlight/img/welcome.png",
-        "thumbs": ["https://neryxomka.com/maksymtarasovlight/img/welcome.png"],
-		"name": "product"
+		"name": "FISH&CHIPS",
+		"price": 719.00,
+		"weight": "750грам",
+		"descr": "Філе тріски смажине в клярі тампура. Картопляні човники, три види соусу. Рекомендовано на двох.",
+		"thumb": "/maksymtarasovlight/img/food/food-2.jpg",
+		"category": "Страви XXL"
 	}
 }

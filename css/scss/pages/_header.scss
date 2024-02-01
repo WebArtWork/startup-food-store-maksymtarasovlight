@@ -36,8 +36,8 @@
     }
 
     :hover {
-      color: #cfa670;
-      border-color: #cfa670;
+      color: $ivory;
+      border-color: $ivory;
     }
   }
 }
@@ -62,6 +62,9 @@
     }
   }
 }
+.material-icons{
+  cursor: pointer;
+}
 
 .menu {
   display: flex;
@@ -83,7 +86,7 @@
     transition: color 0.2s ease;
 
     &:hover {
-      color: #cfa670;
+      color: $ivory;
     }
 
     span {
@@ -109,7 +112,7 @@
     top: -6px;
     right: -8px;
     padding: 3px;
-    background-color: #cfa670;
+    background-color: $ivory;
     border-radius: 50%;
     color: #fff;
     font-size: 12px;
@@ -148,14 +151,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   li:not(:last-child) {
-    border-bottom: 1px solid #3c3a3a; /* Пример стиля бордера */
+    border-bottom: 1px solid #3c3a3a;
   }
 
   a {
     padding: 15px;
     white-space: nowrap;
     display: block;
-    color: #c3c2c2;
+    color: $silver;
     margin-bottom: 5px;
 
     &:hover {

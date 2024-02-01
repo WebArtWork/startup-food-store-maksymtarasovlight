@@ -1,5 +1,3 @@
-
-
 <div class="wrapper">
   <header class="header">
     <div class="header-top">
@@ -76,8 +74,9 @@
             </div>
             <div class="menu__basket-quantuty">0</div>
           </a>
-          <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-         
+          <span class="material-icons icon-menu" onclick="navToggle()"
+            >menu</span
+          >
         </nav>
       </div>
     </div>
@@ -116,24 +115,13 @@
       </li>
       <span class="material-icons icon-close" onclick="navToggle()">close</span>
     </ul>
-    
   </nav>
 
   <div class="container food-menu__container">
     <section class="food-menu">
-      <a href="#" class="food-menu__link">Бургери "KUMPELGER"</a>
-      <a href="#" class="food-menu__link">Вареники</a>
-      <a href="#" class="food-menu__link">Головні страви</a>
-      <a href="#" class="food-menu__link">Ковбаски</a>
-      <a href="#" class="food-menu__link">Салати</a>
-      <a href="#" class="food-menu__link">Перші страви</a>
-      <a href="#" class="food-menu__link">Закуски</a>
-      <a href="#" class="food-menu__link">Додатки</a>
-      <a href="#" class="food-menu__link">Соуси</a>
-      <a href="#" class="food-menu__link">Десерти</a>
-      <a href="#" class="food-menu__link">Розливне Митна</a>
-      <a href="#" class="food-menu__link">Розливне Чорновола</a>
-      <a href="#" class="food-menu__link">Напої</a>
+      {% for listItem in foodMenu %}
+      <a href="#" class="food-menu__link">{{{ listItem.name }}}</a>
+      {% endfor %}
     </section>
   </div>
 
@@ -151,13 +139,13 @@
           {% for product in tag.products %}
           <div class="food-item">
             <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
+              <a href="/product" class="food-item__photo-img">
                 <img src="{{{product.thumb}}}" alt="" />
               </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+              <a href="/product" class="food-item__photo-text"> ХОЧУ! </a>
             </div>
             <div class="food-item__title">
-              <a href="#">{{{product.name}}}</a>
+              <a href="/product">{{{product.name}}}</a>
             </div>
             <div class="food-item__weight">{{{product.weight}}}</div>
             <div class="food-item__price">
