@@ -39,9 +39,25 @@
 }
 
 .food-item {
+  position: relative;
   display: inline-block;
   text-align: center;
   max-width: 245px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(/maksymtarasovlight/img/food-item/var-shap.png) no-repeat
+      center center;
+    background-size: cover;
+    width: 50%;
+    height: 15px;
+    margin-top: 10px;
+  }
 
   &__photo {
     position: relative;
@@ -143,23 +159,51 @@
     margin-top: 30px;
     min-height: 135px;
     font-family: "Oswald", sans-serif;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background: url(/maksymtarasovlight/img/food-item/var-shap.png) no-repeat
-        center center;
-      background-size: cover;
-      width: 50%;
-      height: 15px;
-      margin-top: 10px;
+  &__controls {
+    display: inline-flex;
+    border: 2px solid $ivory;
+    height: 35px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  &__controls-img {
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      g{
+        fill: $dark_gray;
+        transition: fill 0.15s ease;
+      }
     }
   }
+
+  &__controls-number {
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: $dark_gray;
+    padding: 0 8px;
+    border-left: 2px solid $ivory;
+  }
 }
+
+.food-item__controls.productFavorited .food-item__controls-img g {
+  fill: $antelope_skin;
+}
+
 
 @media (max-width: 895px) {
   .food {
