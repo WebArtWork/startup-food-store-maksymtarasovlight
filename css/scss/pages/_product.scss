@@ -1,0 +1,131 @@
+.product {
+  display: flex;
+  gap: 70px;
+  padding: 50px 0 100px;
+  margin-left: 20px;
+
+  &__img {
+    img {
+      width: 555px;
+      max-height: 370px;
+      object-fit: cover;
+    }
+  }
+}
+
+.product-info {
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: $deep_black;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    word-spacing: 1px;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: $ivory;
+    margin-bottom: 24px;
+    padding-bottom: 19px;
+    border-bottom: 2px dotted $gray;
+  }
+
+  &__descr {
+    font-size: 16px;
+    color: $steel_gray;
+    margin-bottom: 10px;
+  }
+
+  &__cart {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+  }
+
+  &__cart-quantity input {
+    border: 1px solid $snow_white;
+    color: $absolute_black;
+    font-size: 15px;
+    height: 50px;
+    max-width: 75px;
+    padding: 0 5px 0 0;
+    letter-spacing: 0.3px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__cart-button {
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: $mahogany_brown;
+    border-radius: 0;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+  }
+
+  &__cart-button:hover {
+    background-color: $ivory;
+  }
+
+  &__category {
+    font-size: 16px;
+    color: $anthracite;
+    margin-top: 8px;
+
+    a {
+      color: $steel_gray;
+      transition: 0.2s ease;
+
+      &:hover {
+        color: $ivory;
+      }
+    }
+  }
+}
+
+.product-info__cart-quantity input::-webkit-inner-spin-button,
+.product-info__cart-quantity input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .product {
+    gap: 40px;
+    &__img {
+      img {
+        width: 455px;
+        height: 320px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .product__container {
+    display: table;
+  }
+  .product {
+    display: table-cell;
+
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{{title}}}</title>
     <meta itemprop="name" content="{{{title}}}" />
@@ -19,7 +19,11 @@
 
     <meta name="keywords" content="{{{keywords}}}" />
     <base href="/" />
-    <link rel="icon" type="image/x-icon" href="/maksymtarasovlight/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/maksymtarasovlight/img/favicon.ico"
+    />
     <link rel="stylesheet" href="/maksymtarasovlight/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,36 +37,60 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{{title}}}</title>
-	<meta itemprop="name" content="{{{title}}}">
-	<meta name="twitter:title" content="{{{title}}}">
-	<meta property="og:title" content="{{{title}}}" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{{title}}}</title>
+    <meta itemprop="name" content="{{{title}}}" />
+    <meta name="twitter:title" content="{{{title}}}" />
+    <meta property="og:title" content="{{{title}}}" />
 
-	<meta name="description" content="{{{description}}}">
-	<meta itemprop="description" content="{{{description}}}">
-	<meta name="twitter:description" content="{{{description}}}">
-	<meta property="og:description" content="{{{description}}}" />
+    <meta name="description" content="{{{description}}}" />
+    <meta itemprop="description" content="{{{description}}}" />
+    <meta name="twitter:description" content="{{{description}}}" />
+    <meta property="og:description" content="{{{description}}}" />
 
-	<meta itemprop="image" content="{{{image}}}">
-	<meta name="twitter:image:src" content="{{{image}}}">
-	<meta property="og:image" content="{{{image}}}" />
+    <meta itemprop="image" content="{{{image}}}" />
+    <meta name="twitter:image:src" content="{{{image}}}" />
+    <meta property="og:image" content="{{{image}}}" />
 
-	<meta name="keywords" content="{{{keywords}}}">
-	<base href="/">
-	<link rel="icon" type="image/x-icon" href="/maksymtarasovlight/img/favicon.ico">
-	<link rel="stylesheet" href="/maksymtarasovlight/css/index.css">
-	<style>
-	/* <!-- CSS --> */
-	</style>
-</head>
-<body>
-
-	<!-- HTML -->
-	<script src="/maksymtarasovlight/js/index.js"></script>
-	<script>
-	// <!-- JS -->
-	</script>
-</body>
+    <meta name="keywords" content="{{{keywords}}}" />
+    <base href="/" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/maksymtarasovlight/img/favicon.ico"
+    />
+    <link rel="stylesheet" href="/maksymtarasovlight/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+         :root{
+       --white: {{{variables.white || '#ffffff'}}};
+       --snow_white: {{{variables.snow_white || '#e5e5e5'}}};
+       --light_salmon: {{{variables.light_salmon || '#e4e1e1'}}};
+       --silver: {{{variables.silver || '#c3c2c2'}}};
+       --ivory: {{{variables.ivory || '#cfa670'}}};
+       --gray: {{{variables.gray || '#b0b0b0'}}};
+       --medium_gray: {{{variables.medium_gray || '#aaaaaa'}}};
+       --antelope_skin: {{{variables.antelope_skin || '#a78455'}}};
+       --steel_gray: {{{variables.steel_gray || '#777777'}}};
+       --dark_gray: {{{variables.dark_gray || '#555555'}}};
+       --charcoal_gray: {{{variables.charcoal_gray || '#3a3a3a'}}};
+       --graphite: {{{variables.graphite || '#2c2c2c'}}};
+       --anthracite: {{{variables.anthracite || '#232323'}}};
+       --deep_black: {{{variables.deep_black || '#151515'}}};
+       --absolute_black: {{{variables.absolute_black || '#000000'}}};
+       --mahogany_brown: {{{variables.mahogany_brown || '#552824'}}};
+       --midnight_black: {{{variables.midnight_black || '#111110'}}};
+       --shadow_black: {{{variables.shadow_black || '#101010'}}};
+         }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <script src="/maksymtarasovlight/js/index.js"></script>
+    <script src="/maksymtarasovlight/js/burgerMenu.js"></script>
+  </body>
 </html>

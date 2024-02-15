@@ -1,26 +1,27 @@
-
 /* font family */
-$ff-base: "Roboto",
-sans-serif;
-$ff-title: "Lato",
-sans-serif;
-$ff-second: 'Roboto',
-sans-serif;
+$ff-base: "Roboto", sans-serif;
+$ff-title: "Lato", sans-serif;
+$ff-second: "Roboto", sans-serif;
 
 /* font-size */
 $fs: 16px;
 
-
-// ===== COLORS ===== 
-$blue: #334D6E;
-$sky: #3498DB;
-$skyL: #58ACF5;
-$grey: #BDBDBD;
-$greyL: #F2F2F2;
-$red: #A31010;
-$redD: #8C1B0F;
-$green: #089227;
-$white: #fff;
-$black: #000;
-$dark: #000;
-
+// ===== COLORS =====
+$white: #ffffff;
+$snow_white: #e5e5e5;
+$light_salmon: #e4e1e1;
+$silver: #c3c2c2;
+$ivory: #cfa670;
+$gray: #b0b0b0;
+$medium_gray: #aaaaaa;
+$antelope_skin: #a78455;
+$steel_gray: #777777;
+$dark_gray: #555555;
+$charcoal_gray: #3a3a3a;
+$graphite: #2c2c2c;
+$anthracite: #232323;
+$deep_black: #151515;
+$absolute_black: #000000;
+$mahogany_brown: #552824;
+$midnight_black :#111110;
+$shadow_black :#101010;

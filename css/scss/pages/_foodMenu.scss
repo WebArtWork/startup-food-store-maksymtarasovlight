@@ -8,25 +8,25 @@
 
   &::-webkit-scrollbar {
     height: 4px;
-    background-color: #e4e1e1;
+    background-color: $light_salmon;
     border-radius: 6px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #cfa670;
+    background-color: $ivory;
     border-radius: 6px;
   }
   &__link {
     text-align: center;
     margin-right: 22px;
     font-size: 14px;
-    color: #151515;
+    color: $deep_black;
     font-weight: 500;
     line-height: 110%;
     transition: color 0.2s ease;
 
     &:hover {
-      color: #cfa670;
+      color: $ivory;
     }
   }
 }
@@ -39,7 +39,7 @@
       position: sticky;
       top: 90px;
       background-color: #fff;
-      z-index: 999;
+      z-index: 99;
       border-top: 1px solid #c5c3c3;
     }
 

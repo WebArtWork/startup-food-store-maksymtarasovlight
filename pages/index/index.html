@@ -6,17 +6,26 @@
           <ul class="header-top__soc-list">
             <li class="header-top__soc-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/facebook.svg" alt="facebook" />
+                <img
+                  src="/maksymtarasovlight/img/icons/facebook.svg"
+                  alt="facebook"
+                />
               </a>
             </li>
             <li class="header-top__soc-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/instagram.svg" alt="instagram" />
+                <img
+                  src="/maksymtarasovlight/img/icons/instagram.svg"
+                  alt="instagram"
+                />
               </a>
             </li>
             <li class="header-top__soc-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/youtube.svg" alt="youtube" />
+                <img
+                  src="/maksymtarasovlight/img/icons/youtube.svg"
+                  alt="youtube"
+                />
               </a>
             </li>
           </ul>
@@ -65,30 +74,54 @@
             </div>
             <div class="menu__basket-quantuty">0</div>
           </a>
-
-          <button class="menu__icon icon-menu" type="button">
-            <img src="/maksymtarasovlight/img/icons/menu.svg" alt="menu" />
-          </button>
+          <span class="material-icons icon-menu" onclick="navToggle()"
+            >menu</span
+          >
         </nav>
       </div>
     </div>
   </header>
+  <nav class="burger-nav">
+    <div class="burger-nav__overlay" onclick="navToggle()"></div>
+    <ul class="burger-nav__ul" id="navUl">
+      <a href="#" class="burger-nav__img">
+        <img src="/maksymtarasovlight/img/logo.png" alt="" />
+      </a>
+      <li class="burger-nav__li">
+        <a href="#" class="burger-nav__a">Головна</a>
+      </li>
+
+      <li class="burger-nav__li accordeon">
+        <div class="accordeon__item">
+          <a href="#" class="burger-nav__a accordeon__button">Закладки</a>
+
+          <ul class="accordeon__list">
+            <li><a href="#">Кумпель на Митній</a></li>
+            <li><a href="#">Кумпель за Оперним</a></li>
+            <li><a href="#">Кумпель на Ринку</a></li>
+            <li class="li__last"><a href="#">Craft&Kumpel Beer Atelier</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="burger-nav__li">
+        <a href="#" class="burger-nav__a">Політика конфіденційності</a>
+      </li>
+      <li class="burger-nav__li">
+        <a href="#" class="burger-nav__a">Договір публічної оферти</a>
+      </li>
+      <li class="burger-nav__li burger-nav__li-last">
+        <a href="#" class="burger-nav__a">Контакти</a>
+      </li>
+      <span class="material-icons icon-close" onclick="navToggle()">close</span>
+    </ul>
+  </nav>
 
   <div class="container food-menu__container">
     <section class="food-menu">
-      <a href="#" class="food-menu__link">Бургери "KUMPELGER"</a>
-      <a href="#" class="food-menu__link">Вареники</a>
-      <a href="#" class="food-menu__link">Головні страви</a>
-      <a href="#" class="food-menu__link">Ковбаски</a>
-      <a href="#" class="food-menu__link">Салати</a>
-      <a href="#" class="food-menu__link">Перші страви</a>
-      <a href="#" class="food-menu__link">Закуски</a>
-      <a href="#" class="food-menu__link">Додатки</a>
-      <a href="#" class="food-menu__link">Соуси</a>
-      <a href="#" class="food-menu__link">Десерти</a>
-      <a href="#" class="food-menu__link">Розливне Митна</a>
-      <a href="#" class="food-menu__link">Розливне Чорновола</a>
-      <a href="#" class="food-menu__link">Напої</a>
+      {% for listItem in foodMenu %}
+      <a href="#" class="food-menu__link">{{{ listItem.name }}}</a>
+      {% endfor %}
     </section>
   </div>
 
@@ -98,104 +131,60 @@
     </div>
     <div class="container">
       <section class="food">
+        {% for tag in tags %}
         <div class="food__title">
-          <a href="#">Страви XXL</a>
+          <a href="#">{{{tag.name}}}</a>
         </div>
         <div class="food__list">
+          {% for product in tag.products %}
           <div class="food-item">
             <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
+              <a href="/product" class="food-item__photo-img">
+                <img src="{{{product.thumb}}}" alt="" />
               </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
+              <a href="/product" class="food-item__photo-text"> ХОЧУ! </a>
             </div>
             <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
+              <a href="/product">{{{product.name}}}</a>
             </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
+            <div class="food-item__weight">{{{product.weight}}}</div>
+            <div class="food-item__price">
+              <span>{{{product.price}}}</span>₴
+            </div>
             <div class="food-item__descr">
-              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
-              огірком, синьою цибулею, беконом та міксом салату. Подається з
-              картопляними діпами та кетчупом.
-              <em>*У вартість входить упакування</em>
+              {{{product.descr}}}
+              <em>{{{product.packaging}}}</em>
             </div>
+            <div class="food-item__controls {{{(productFavorited && productFavorited(product.id)) && 'productFavorited'}}}" productId="{{{product.id}}}">
+							<div class="food-item__controls-img">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0,0,256,256"><g fill="#f7f7f7" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(0,257.86667) scale(0.26667,0.26667)"><path d="M480,-120l-58,-52c-67.33333,-60.66667 -123,-113 -167,-157c-44,-44 -79,-83.5 -105,-118.5c-26,-35 -44.16667,-67.16667 -54.5,-96.5c-10.33333,-29.33333 -15.5,-59.33333 -15.5,-90c0,-62.66667 21,-115 63,-157c42,-42 94.33333,-63 157,-63c34.66667,0 67.66667,7.33333 99,22c31.33333,14.66667 58.33333,35.33333 81,62c22.66667,-26.66667 49.66667,-47.33333 81,-62c31.33333,-14.66667 64.33333,-22 99,-22c62.66667,0 115,21 157,63c42,42 63,94.33333 63,157c0,30.66667 -5.16667,60.66667 -15.5,90c-10.33333,29.33333 -28.5,61.5 -54.5,96.5c-26,35 -61,74.5 -105,118.5c-44,44 -99.66667,96.33333 -167,157zM480,-228c64,-57.33333 116.66667,-106.5 158,-147.5c41.33333,-41 74,-76.66667 98,-107c24,-30.33333 40.66667,-57.33333 50,-81c9.33333,-23.66667 14,-47.16667 14,-70.5c0,-40 -13.33333,-73.33333 -40,-100c-26.66667,-26.66667 -60,-40 -100,-40c-31.33333,0 -60.33333,8.83333 -87,26.5c-26.66667,17.66667 -45,40.16667 -55,67.5h-76c-10,-27.33333 -28.33333,-49.83333 -55,-67.5c-26.66667,-17.66667 -55.66667,-26.5 -87,-26.5c-40,0 -73.33333,13.33333 -100,40c-26.66667,26.66667 -40,60 -40,100c0,23.33333 4.66667,46.83333 14,70.5c9.33333,23.66667 26,50.66667 50,81c24,30.33333 56.66667,66 98,107c41.33333,41 94,90.16667 158,147.5zM480,-501z"></path></g></g></svg>
+							</div>
+							<div class="food-item__controls-number">999</div>
+						</div>
           </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
-              огірком, синьою цибулею, беконом та міксом салату. Подається з
-              картопляними діпами та кетчупом.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              З яловичою котлетою, сиром Чеддер, томатами чері, маринованим
-              огірком, синьою цибулею, беконом та міксом салату. Подається з
-              картопляними діпами та кетчупом.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              Томлене у вершково-грибному соусі м'ясо. Подається з смаженою
-              картоплею та огірочками з бочки.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
-          <div class="food-item">
-            <div class="food-item__photo">
-              <a href="#" class="food-item__photo-img">
-                <img src="/maksymtarasovlight/img/food/food-1.jpg" alt="" />
-              </a>
-              <a href="#" class="food-item__photo-text"> ХОЧУ! </a>
-            </div>
-            <div class="food-item__title">
-              <a href="#">FISH&CHIPS</a>
-            </div>
-            <div class="food-item__weight">100грам</div>
-            <div class="food-item__price"><span>299.00</span>₴</div>
-            <div class="food-item__descr">
-              Томлене у вершково-грибному соусі м'ясо. Подається з смаженою
-              картоплею та огірочками з бочки.
-              <em>*У вартість входить упакування</em>
-            </div>
-          </div>
+          {% endfor %}
         </div>
+        {% endfor %}
+
+        <script type="module">
+          import Dom from '/api/wjst/dom';
+          import Productfavorite from '/api/wjst/productfavorite';
+          Dom.click('productId', (element) => {
+            console.log(element, element.getAttribute('productId'));
+            if (element.classList.contains('productFavorited')) {
+              element.classList.remove('productFavorited');
+              Productfavorite.delete({
+                product: element.getAttribute('productId')
+              });
+            } else {
+              element.classList.add('productFavorited');
+              Productfavorite.create({
+                product: element.getAttribute('productId')
+              });
+            }
+          });
+        </script>
+        
       </section>
     </div>
   </main>
@@ -208,17 +197,26 @@
           <ul class="footer-top__info-list">
             <li class="footer-top__info-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/facebook.svg" alt="facebook" />
+                <img
+                  src="/maksymtarasovlight/img/icons/facebook.svg"
+                  alt="facebook"
+                />
               </a>
             </li>
             <li class="footer-top__info-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/instagram.svg" alt="instagram" />
+                <img
+                  src="/maksymtarasovlight/img/icons/instagram.svg"
+                  alt="instagram"
+                />
               </a>
             </li>
             <li class="footer-top__info-item">
               <a href="#">
-                <img src="/maksymtarasovlight/img/icons/youtube.svg" alt="youtube" />
+                <img
+                  src="/maksymtarasovlight/img/icons/youtube.svg"
+                  alt="youtube"
+                />
               </a>
             </li>
           </ul>
