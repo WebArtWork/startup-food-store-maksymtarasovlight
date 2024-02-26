@@ -2,8 +2,9 @@
 	"name": "article",
 	"article": {
 		"id": "/article",
-		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/maksymtarasovlight/img/welcome.png",
-		"name": "Article Name"
+		"thumb": "/maksymtarasovlight/img/articles/article1.jpg",
+		"date": "22.02.2024",
+		"name": "Щасливі години в DOM",
+		"description": "Смачна акція в ресторанах Dom! По буднях з 15:00 до 17:00 друга порція з розділів 'Піца' та 'Паста' за 100 грн! *Акція діє тільки в ресторанах DOM і не розповсюджується на доставку. * Не діє 25.02.2024."
 	}
 }

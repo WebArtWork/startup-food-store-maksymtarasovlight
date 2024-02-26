@@ -3,24 +3,31 @@
 	"articles": [
 		{
 			"id": "123",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/maksymtarasovlight/img/welcome.png",
-			"name": "Article Name"
+			"thumb": "/maksymtarasovlight/img/articles/article1.jpg",
+			"date": "22.02.2024",
+			"name": "Щасливі години в Pesto Cafe",
+			"description": "Тільки в ресторанах! По буднях з 15:00 до 17:00 друга піца та паста за 100 грн"
 		},
 		{
 			"id": "123",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/maksymtarasovlight/img/welcome.png",
-			"name": "Article Name"
+			"thumb": "/maksymtarasovlight/img/articles/article3.jpg",
+			"date": "21.02.2024",
+			"name": "Розіграш в Instagram",
+			"description": "Умови для участі в розіграшіБути підписаним на нашу сторінку інстаграм 2. Поставити лайк на публікацію з розіграшем 3. Відмітити друга у коментарях під публікацією з розіграшем ДОКЛАДНІ ПРАВИЛА УЧАСТІ У РОЗІГРАШІ 1.1.  Захід «Розіграш», далі – Захід, проводиться лише на території м. К-П в Мережі швидкого харчування «DOM»."
 		},
 		{
 			"id": "123",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/maksymtarasovlight/img/welcome.png",
-			"name": "Article Name"
+			"thumb": "/maksymtarasovlight/img/articles/food-1.jpg",
+			"date": "19.02.2024",
+			"name": "Знижка 10% на страви із собою",
+			"description": "При замовленні страв із собою ви отримуєте знижку 10% в усіх ресторанах Dom"
+		},
+		{
+			"id": "123",
+			"thumb": "/maksymtarasovlight/img/articles/article4.jpg",
+			"date": "15.02.2024",
+			"name": "Піца на товстому тісті!",
+			"description": "Чому ми готуємо піцу на товстому коржі? Відповідь проста! Наша піца готується за американським рецептом, який відрізняється від, популярного, італійського Тісто розкочується товщє, зазвичай 2-3 см Сорт дріжджів робить тісто більш солодким і пухким В асортимент входить більше інгредієнтів, а продукти можуть накладатися один на одного"
 		}
 	]
 }
