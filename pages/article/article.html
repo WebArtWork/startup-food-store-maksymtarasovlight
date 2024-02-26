@@ -1,6 +1,27 @@
-<h1>{{{article.name}}}</h1>
-<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-<pre>{{{article.description|safe}}}</pre>
-{% if article.reference %}
-<a href="{{{article.reference}}}">{{{article.reference}}}</a>
-{% endif %}
+<div class="container article__container">
+    <h3 class="articles-main__title article__title">{{{article.name}}}</h3>
+    <div class="articles-item__date">
+      <img src="/maksymtarasovlight/img/icons/clock.svg" alt="" />
+      <span>{{{article.date}}}</span>
+    </div>
+    <div class="articles-item article">
+      <div class="articles-item__img">
+        <img src="{{{article.thumb}}}" alt="{{{article.thumb}}}" />
+      </div>
+      <div class="articles-item__info">
+        <div class="articles-item__descr">{{{article.description}}}</div>
+        <a href="/articles" class="articles-item__btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            viewBox="0 -960 960 960"
+            width="20"
+            fill="#cfa670"
+          >
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+          </svg>
+          <span>До всіх новин</span>
+        </a>
+      </div>
+    </div>
+  </div>

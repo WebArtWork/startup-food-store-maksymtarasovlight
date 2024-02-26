@@ -1,0 +1,110 @@
+.title-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  margin-top: 50px;
+  color: $antelope_skin;
+  font-size: 38px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 79px;
+    height: 7px;
+    background-size: cover;
+    margin-bottom: -5px;
+  }
+
+  &::before {
+    background: url(/maksymtarasovlight/img/food-item/left-shap.png) no-repeat
+      center center;
+    margin-right: 13px;
+  }
+
+  &::after {
+    background: url(/maksymtarasovlight/img/food-item/right-shap.png) no-repeat
+      center center;
+    margin-left: 13px;
+  }
+}
+
+.btn-main {
+  margin-top: 40px;
+  display: block;
+  max-width: 170px;
+  margin: 40px auto 0;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  background-color: $ivory;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 32px;
+
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: $antelope_skin;
+  }
+}
+
+.food-item__photo {
+  position: relative;
+}
+
+.food-item__new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px;
+}
+
+/*-------------dignity-------------*/
+.dignity {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dignity {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 490px) {
+    .dignity {
+      &__text{
+        font-size: 18px;
+        bottom: 20px;
+      }
+    }
+  }
+/*-------------/dignity-------------*/
+

@@ -1,0 +1,154 @@
+.articles{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-inline: auto;
+}
+
+.articles-main__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+    color: $ivory;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+  
+    &::before,
+    &::after {
+      content: "";
+      width: 79px;
+      height: 7px;
+      background-size: cover;
+      margin-bottom: -5px;
+    }
+  
+    &::before {
+      background: url(/maksymtarasovlight/img/food-item/left-shap.png) no-repeat
+        center center;
+      margin-right: 13px;
+    }
+  
+    &::after {
+      background: url(/maksymtarasovlight/img/food-item/right-shap.png) no-repeat
+        center center;
+      margin-left: 13px;
+    }
+  }
+  
+  .articles-main {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .articles-list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 20px;
+    margin: 0 70px 30px;
+  }
+  
+  .articles-item {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    min-height: 460px;
+    background-color: #fff2dd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    &__info {
+      padding: 20px;
+    }
+  
+    &__img {
+      img {
+        width: 450px;
+        max-height: 230px;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+        margin: 10px 0 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+    
+      &__descr {
+        min-height: 75px;
+        color: $anthracite;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+  
+    &__date-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      padding: 0 30px 20px;
+    }
+  
+    &__date {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      color: $steel_gray;
+      font-size: 14px;
+    }
+
+    &__btn {
+      color: $ivory;
+      display: inline-flex;
+      align-items: center;
+      font-size: 16px;
+  
+      g {
+        fill: $ivory;
+      }
+  
+      &:hover span {
+        color: $antelope_skin;
+      }
+  
+      &:hover svg {
+        g {
+          fill: $antelope_skin;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .articles-list {
+      margin: 0 0 30px;
+    }
+  
+    .articles-item {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .articles-list {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .articles-item {
+      width: auto;
+  
+      &__img {
+        img {
+          width: auto;
+          max-height: fit-content;
+          border-radius: 6px 6px 0 0;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .articles-item__date-btn {
+      padding: 0 20px 20px;
+    }
+  }

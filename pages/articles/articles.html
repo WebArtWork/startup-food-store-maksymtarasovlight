@@ -1,9 +1,56 @@
-{% for article in articles %}
-<a href="/article/{{{article.id}}}" class="article__item">
-	<h1>{{{article.name}}}</h1>
-	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-	<pre>
-		{{{article.short}}}
-	</pre>
-</a>
-{% endfor %}
+<section class="articles-main articles">
+	<h2 class="articles-main__title">Новини</h2>
+	<div class="articles-list">
+	  {% for article in articles %}
+	  <div class="articles-item">
+		<div class="articles-item__img">
+		  <img src="{{{article.thumb}}}" alt="" />
+		</div>
+		<div class="articles-item__info">
+		  <h3 class="articles-item__title">{{{article.name}}}</h3>
+		  <div class="articles-item__descr">{{{article.description}}}</div>
+		</div>
+		<div class="articles-item__date-btn">
+		  <div class="articles-item__date">
+			<img src="/maksymtarasovlight/img/icons/clock.svg" alt="" />
+			<span>{{{article.date}}}</span>
+		  </div>
+		  <a href="/article" class="articles-item__btn">
+			<span>Детальніше</span>
+			<svg
+			  version="1.1"
+			  xmlns="http://www.w3.org/2000/svg"
+			  xmlns:xlink="http://www.w3.org/1999/xlink"
+			  width="24"
+			  height="24"
+			  viewBox="0,0,256,256"
+			>
+			  <g
+				fill="#f6f6f6"
+				fill-rule="nonzero"
+				stroke="none"
+				stroke-width="1"
+				stroke-linecap="butt"
+				stroke-linejoin="miter"
+				stroke-miterlimit="10"
+				stroke-dasharray=""
+				stroke-dashoffset="0"
+				font-family="none"
+				font-weight="none"
+				font-size="none"
+				text-anchor="none"
+				style="mix-blend-mode: normal"
+			  >
+				<g transform="translate(3.2,256) scale(0.26667,0.26667)">
+				  <path
+					d="M504,-480l-184,-184l56,-56l240,240l-240,240l-56,-56z"
+				  ></path>
+				</g>
+			  </g>
+			</svg>
+		  </a>
+		</div>
+	  </div>
+	  {% endfor %}
+	</div>
+  </section>
