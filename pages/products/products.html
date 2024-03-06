@@ -1,12 +1,11 @@
 
 <div class="container food-menu__container">
     <section class="food-menu">
-      {% for listItem in foodMenu %}
-      <a href="#" class="food-menu__link">{{{ listItem.name }}}</a>
+      {% for tag in tags %}
+      <a href="#{{{tag._id|string}}}" class="food-menu__link">{{{ tag.name }}}</a>
       {% endfor %}
     </section>
   </div>
-
   <main>
     <div class="bg-foto">
       <img src="{{{variables.bg_img}}}" alt="bg" />
@@ -31,7 +30,7 @@
             </div>
             <div class="food-item__weight">{{{product.weight}}}</div>
             <div class="food-item__price">
-              <span>{{{product.price}}}</span>₴
+              <span>{{{product.price}}}&nbsp;</span>{{{currency}}}
             </div>
             <div class="food-item__descr">
               {{{product.descr}}}
